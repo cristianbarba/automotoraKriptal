@@ -27,6 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#SE CREA UNA NUEVA APP LLAMADA accounts y dentro un templates y como subcarpeta registration para login de usuario
+#SE REDIRECCIONA A LA URL RAIZ EN EL LOGIN
+
+LOGIN_REDIRECT_URL="/"
+
+#se redirecciona al logouy al login.html
+LOGOUT_REDIRECT_URL="/accounts/login"
+
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 # Application definition
