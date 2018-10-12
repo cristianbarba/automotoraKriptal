@@ -3,6 +3,9 @@ from .models import Automovil, Marca
 #importamos la mensajeria de django
 from django.contrib import messages
 
+#nuevo comentario
+
+
 
 # Create your views here.
 
@@ -104,3 +107,5 @@ def modificar_automovil(request, id):
         return redirect('listado')
 
     return render(request, 'core/modificar_automovil.html', variables)
+
+
